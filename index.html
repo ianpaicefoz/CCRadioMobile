@@ -1,10 +1,34 @@
+<!DOCTYPE html>
 <html>
+<head>
+<title>:::CCRadio Mobile Player:::</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 
+</head>
+<body>
+<div data-role="page" class="ui-page">
+
+<div id='cabecera'  data-role="header" data-position="fixed">
+<center>::: CCRadio Mobile Player :::</center>
+</div>
+<div data-role="main" class="ui-content">
+<!-- Texto Explicativo -->
+<p style='text-align:justify; font-size:10px;'>CCRadio es una radio que emite unicamente m&uacute;sica bajo licencias Creative Commons. Esta m&uacute,sica no esta registrada en el cat&aacute;logo
+de las Sociedades de Autor m&aacute;s habituales y por lo tanto est&aacute; libre de pago por comunicaci&oacute;n p&uacute;blica.<br><br>
+CCRadio.es es un proyecto sin &aacute;nimo de lucro y eres libre de utilizar la m&uacute;sica bajo las limitaciones de las licencias ordenadas por los autores.<br><br>
+No es necesario realizar ning&uacute;n pago pero si recomendamos recompensar a los autores por su trabajo.</p>
+
+
+<!-- Botón reproductor -->
 <audio id="stream" preload='auto'>
         <source src="http://radioserver01.ccradio.es:8000/canal_1" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-    <a href="#" id="audioControl">play!</a>
+<center><a href="#" id="audioControl"><img src='imgs/play-button-th.png' width='80' height='80'></a></center>
 
 <script>
 var stream = document.getElementById('stream'),
@@ -13,11 +37,11 @@ ctrl = document.getElementById('audioControl');
 ctrl.onclick = function () {
 
 // Update the Button
-var pause = ctrl.innerHTML === 'pause!';
-ctrl.innerHTML = pause ? 'play!' : 'pause!';
+var pause = ctrl.innerHTML === "pause!";
+ctrl.innerHTML = pause ? "<img src='imgs/play-button-th.png' width='80' height='80'>" : "pause!";
 
 // Update the Audio
-var method = pause ? 'pause' : 'play';
+var method = pause ? "pause" : "play";
 stream[method]();
 
 // Prevent Default Action
@@ -25,4 +49,13 @@ return false;
 };
 </script>
 
+<!-- Obtenemos info de reproducción -->
+
+<iframe src='info_song.html'></iframe>
+</div>
+<div id='pie' data-role="footer"  data-position="fixed">
+<center>Versi&oacute;n 0.1 - ARBORE Proxectos</center>
+</div>
+
+</body>
 </html>

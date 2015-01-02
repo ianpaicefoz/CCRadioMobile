@@ -23,31 +23,6 @@ CCRadio.es es un proyecto sin &aacute;nimo de lucro y eres libre de utilizar la 
 No es necesario realizar ning&uacute;n pago pero si recomendamos recompensar a los autores por su trabajo.</p>
 
 
-<!-- Botón reproductor -->
-<!--<audio id="stream" preload='auto'>
-        <source src="http://radioserver01.ccradio.es:8000/canal_1" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-<center><a href="#" id="audioControl"><img src='imgs/play-button-th.png' width='80' height='80'></a></center>
-
-<script>
-var stream = document.getElementById('stream'),
-ctrl = document.getElementById('audioControl');
-
-ctrl.onclick = function () {
-
-// Update the Button
-var pause = ctrl.innerHTML === "pause!";
-ctrl.innerHTML = pause ? "<img src='imgs/play-button-th.png' width='80' height='80'>" : "pause!";
-
-// Update the Audio
-var method = pause ? "pause" : "play";
-stream[method]();
-
-// Prevent Default Action
-return false;
-};
-</script>-->
 <div align="center" id="radioforge1420203922" style="width:250px; height:250px; text-align:center;">
 <script type="text/javascript" src="http://hosted.musesradioplayer.com/mrp.js"></script>
 <script type="text/javascript">MRP.insert({
@@ -71,7 +46,7 @@ return false;
 
 <!-- Obtenemos info de reproducción -->
 
-<iframe src='info_song.html'></iframe>
+<iframe src='http://37.187.183.111/portal/player/info.php'></iframe>
 </div>
 <div id='pie' data-role="footer"  data-position="fixed">
 <center>Versi&oacute;n 0.1 - ARBORE Proxectos</center>

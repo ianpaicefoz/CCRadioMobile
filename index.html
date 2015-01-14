@@ -7,36 +7,49 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script type="text/javascript" charset="utf-8"> 
+    document.addEventListener("backbutton", onBackKeyDown, false);
+    function onBackKeyDown() {
+    navigator.app.exitApp();
+    }
+</script>
 
 </head>
 <body>
 <div data-role="page" class="ui-page">
 
 <div id='cabecera'  data-role="header" data-position="fixed">
-<center>::: CCRadio Mobile Player :::</center>
+<center>::: CCRadio App :::</center>
 </div>
 <div data-role="main" class="ui-content">
 <!-- Logo -->
 <div style='text-align:center;'>
-<br>
+<br><br>
 <img src='imgs/ccradio2.png'>
 <br>
 </div>
 <!-- Texto Explicativo -->
-<p style='text-align:justify; font-size:10px;'>CCRadio es una radio que emite unicamente m&uacute;sica bajo licencias Creative Commons. Esta m&uacute,sica no esta registrada en el cat&aacute;logo
+<p style='text-align:justify; font-size:10px;'>CCRadio es una radio que emite unicamente m&uacute;sica bajo licencias Creative Commons. Esta m&uacute;sica no esta registrada en el cat&aacute;logo
 de las Sociedades de Autor m&aacute;s habituales y por lo tanto est&aacute; libre de pago por comunicaci&oacute;n p&uacute;blica.<br><br>
 CCRadio.es es un proyecto sin &aacute;nimo de lucro y eres libre de utilizar la m&uacute;sica bajo las limitaciones de las licencias ordenadas por los autores.<br><br>
-No es necesario realizar ning&uacute;n pago pero si recomendamos recompensar a los autores por su trabajo.</p>
+</p>
 <br>
-<div data-role="controlgroup" data-type="horizontal" style='margin-left:60px;'>
+<div data-role="controlgroup" data-type="horizontal" style='text-align:center;'>
 <a href="canal_1.html" rel="external" data-role="button">Canal 1</a>
 <a href='canal_2.html' rel="external" data-role="button">Canal 2</a>
 <a href='canal_3.html' rel="external" data-role="button">Canal 3</a>
 </div>
 
+<div style='text-align:center;'>
+<p>
+<br><br>
+<a href='http://es.wikipedia.org/wiki/Creative_Commons' target='_blank'><img src='imgs/ccwhiteshadow.png' width='200' height='50'></a>
+</p>
+</div>
+
 </div>
 <div id='pie' data-role="footer"  data-position="fixed">
-<center>Versi&oacute;n 0.1 - ARBORE Proxectos</center>
+<!--<center>Versi&oacute;n 0.1 - ARBORE Proxectos</center>-->
 </div>
 
 </body>

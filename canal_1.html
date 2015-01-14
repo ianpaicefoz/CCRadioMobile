@@ -13,48 +13,48 @@
 <div data-role="page" class="ui-page">
 
 <div id='cabecera'  data-role="header" data-position="fixed">
-<center>::: CCRadio Mobile Player :::</center>
+<center>::: CCRadio App :::</center>
 </div>
 <div data-role="main" class="ui-content">
-<!-- Texto Explicativo -->
-<p style='text-align:justify; font-size:10px;'></p>
-<div data-role="controlgroup" data-type="horizontal" style='text-align:center;'>
-<a href="canal_1.html" rel="external" data-role="button">Canal 1</a>
-<a href='canal_2.html' rel="external" data-role="button">Canal 2</a>
-<a href='canal_3.html' rel="external" data-role="button">Canal 3</a>
-</div>
 
-<div align="center" id="radioforge1420203922" style="width:250px; height:250px; margin-left:80px;">
-<br>
-<script type="text/javascript" src="http://hosted.musesradioplayer.com/mrp.js"></script>
-<script type="text/javascript">MRP.insert({
-'url':'http://radioserver01.ccradio.es:8000/canal_1',
-'lang':'auto',
-'codec':'mp3',
-'volume':50,
-'introurl':'',
-'fallback':'',
-'autoplay':false,
-'jsevents':false,
-'buffering':5,
-'title':'CCRadio',
-'welcome':'CCRadio Canal 1',
-'bgcolor':'#000000',
-'wmode':'transparent',
-'skin':'kplayer',
-'width':250,
-'height':250});
-</script><div style="float:right; padding-right:3px; margin-top:-25px; z-index:2000; overflow:auto; position:absolute;"></div></div>
+	<!-- Seleccion de canales -->
+	<div data-role="controlgroup" data-type="horizontal" style='text-align:center;'>
+	<a href="canal_1.html" rel="external" data-role="button">Canal 1</a>
+	<a href='canal_2.html' rel="external" data-role="button">Canal 2</a>
+	<a href='canal_3.html' rel="external" data-role="button">Canal 3</a>
+	</div>
 
-<!-- Obtenemos info de reproducción -->
+	<!-- Info Canal -->
+	<br>
+	<div style='text-align:center;'>
+	<h3>::COMERCIAL::</h3>
+	<p style='text-align:center; font-size:10px;'>
+	M&uacute;sica comercial, para ambientes din&aacute;micos.
+	</p>
+	</div>
+	<br>
+	
+	<!-- Obtenemos info de reproducción -->
+	<iframe style='width:100%;' src='http://radioserver01.ccradio.es/portal/info_c1.php' frameborder='0' height='140px'></iframe>
+	<br>
+	<!-- Player HTML5 -->
+	<div id='player' style='text-align:center;'>
+	<audio controls>
+	<source src="http://radioserver01.ccradio.es:8000/canal_1" type="audio/mpeg" />
+	<em>Sorry, your browser doesn't support HTML5 audio.</em>
+	</audio>
+	</div>
 
-<iframe style='margin-left:140px;' src='http://radioserver01.ccradio.es/portal/info_c1.php' frameborder='0' width='120px;' height='140px'></iframe>
-<div style='text-align:center;'>
-<a href='index.html' rel="external" data-role="button" data-inline="true" data-icon="back">Volver al inicio</a>
-</div>
+	<br><br>
+	<!-- Botón de retorno -->
+	<div style='text-align:center;'>
+	<a href='index.html' rel="external" data-role="button" data-inline="true" data-icon="back">Volver al inicio</a>
+	</div>
+	
+
 </div>
 <div id='pie' data-role="footer"  data-position="fixed">
-<center>Versi&oacute;n 0.1 - ARBORE Proxectos</center>
+<!--<center>Versi&oacute;n 0.1 - ARBORE Proxectos</center>-->
 </div>
 
 </body>

@@ -3,9 +3,6 @@
     background-size: cover;
 	background-repeat:no-repeat;
 	background-attachment: fixed;
-	
-	/*background-image: url("http://www.cervezotecamalte.com/maltemb/img/TRAM2.png");
-	background-repeat:repeat;*/
 }
 .ui-content {
     color:#FFFFFF;
@@ -22,11 +19,13 @@ a
 }
 #cabecera
 {
+	background-color: #6E5E6E;
 	font-size: 12px;
+	color: white;
 }
 
 #pie
 {
+	background-color: #6E6E6E;
 	font-size: 12px;
-	text-align: right;
 }

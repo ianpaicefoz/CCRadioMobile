@@ -7,11 +7,21 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="cordova.js"></script>
 <script type="text/javascript" charset="utf-8"> 
+document.addEventListener("deviceready", onDeviceReady, false);
+
+// PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+function onDeviceReady() {
+    // Register the event listener
     document.addEventListener("backbutton", onBackKeyDown, false);
-    function onBackKeyDown() {
-    navigator.app.exitApp();
-    }
+}
+
+// Handle the back button
+function onBackKeyDown() {
+         //Your backbutton code
+		navigator.app.exitApp();
+}
 </script>
 
 </head>
